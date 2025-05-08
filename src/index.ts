@@ -10,8 +10,7 @@ app.use(express.json());
 mongoose
   .connect("mongodb://localhost:27017/ecommerce")
   .then(() => console.log("Mongo Connected"));
-
-
+  
 app.use('/user',userRoute)
 
 app.listen(port, () => {
